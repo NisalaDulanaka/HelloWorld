@@ -39,8 +39,9 @@ function whackMole(event) {
         document.getElementById('score').textContent = `Score: ${score}`;
     }
 
-    if(score == 10) {
+    if(score >= 10) {
         clearInterval(gameInterval);
+        document.getElementById('pop-up-container').classList.remove('hidden');
     }
 }
 

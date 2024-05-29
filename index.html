@@ -28,9 +28,35 @@
           flex-direction: column;
           gap: 5em;
 
-          tr {
+        }
 
-          }
+        #pop-up-container{
+          background-color: rgba(0, 0, 0, 0.415);
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0%;
+          left: 0%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .pop-up{
+          width: 400px;
+          height: 300px;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .pop-up h2{
+          
+        }
+
+        .hidden{
+          display: none;
         }
     </style>
 </head>
@@ -86,6 +112,14 @@
       <button onclick="startGame()">Start Game</button>
       <div id="score">Score: 0</div>
       </div>
+    </div>
+
+    <div id="pop-up-container" class="">
+
+      <div class="pop-up">
+        <h2>Yay! you got the mole</h2>
+      </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
