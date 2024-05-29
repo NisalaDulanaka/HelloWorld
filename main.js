@@ -33,10 +33,14 @@ function startGame() {
 }
 
 function whackMole(event) {
-    if (event.target.src.includes('mole.jpeg')) {
+    if (event.target.src.includes('seneli.jpeg')) {
         score++;
         event.target.src = 'seneli.jpeg';
         document.getElementById('score').textContent = `Score: ${score}`;
+    }
+
+    if(score == 10) {
+        clearInterval(gameInterval);
     }
 }
 
