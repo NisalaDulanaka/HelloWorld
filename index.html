@@ -14,6 +14,14 @@
         h1 {
             color: red;
         }
+
+        .main{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 5em;
+        }
     </style>
 </head>
 <body>
@@ -54,38 +62,43 @@
         </div>
       </nav>
 
-    <h1>Hello, World</h1>
-    <p><strong><em>Hello, World</em></strong></p>
-
-    <table border="1px">
-        <tr>
-            <td rowspan="2">Row 1 Cell 1</td>
-            <td><img src="seneli.jpeg" width="100px" height="auto"></td>
-            <td><img src="seneli.jpeg" width="100px" height="auto"></td>
-        </tr>
-        <tr>
-            <td><img src="seneli.jpeg" width="100px" height="auto"></td>
-            <td><img src="seneli.jpeg" width="100px" height="auto"></td>
-        </tr>
-        <tr>
-            <td><img src="seneli.jpeg" width="100px" height="auto"></td>
-            <td><img src="seneli.jpeg" width="100px" height="auto"></td>
-        </tr>
-    </table>
-
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Seneli Jayasinghe</h5>
-          <p class="card-text">Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="container-fluid main">
+        <div class="heading">
+          <h1>Whack-A-Hoe</h1>
         </div>
-      </div>
+        <div class="section1">
+          <table border="1px">
+            <tr>
+                <td rowspan="2">Row 1 Cell 1</td>
+                <td><img src="seneli.jpeg" width="100px" height="auto"></td>
+                <td><img src="seneli.jpeg" width="100px" height="auto"></td>
+            </tr>
+            <tr>
+                <td><img src="seneli.jpeg" width="100px" height="auto"></td>
+                <td><img src="seneli.jpeg" width="100px" height="auto"></td>
+            </tr>
+            <tr>
+                <td><img src="seneli.jpeg" width="100px" height="auto"></td>
+                <td><img src="seneli.jpeg" width="100px" height="auto"></td>
+            </tr>
+        </table>
+        </div>    
 
-    <form method="post" action="mailto:youremail@email.com">
-        <p>Name:</p><input type="text" size="10" maxlength="40" name="name">
-        <p>Password:</p><input type="password" size="10" maxlength="10" name="password">
-    </form>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Seneli Jayasinghe</h5>
+              <p class="card-text">Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli Seneli</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <form method="post" action="mailto:youremail@email.com">
+            <p>Name:</p><input type="text" size="10" maxlength="40" name="name">
+            <p>Password:</p><input type="password" size="10" maxlength="10" name="password">
+        </form>
+      </div>
+    
+      
 
 
 
