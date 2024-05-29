@@ -17,7 +17,18 @@ function startGame() {
         
         const moleIndex = Math.floor(Math.random() * 9) + 1;
         activeMole = document.getElementById(`img${moleIndex}`);
-        activeMole.src = 'mole.jpeg';  // Change to mole image
+        activeMole.src = 'seneli.jpeg';  // Change to mole image
+
+        let images = document.querySelectorAll('tr td img');
+
+        for(let i=0; i < images.length; i++){
+            let image = images[i];
+
+            if(image !== activeMole){
+                image.src = '';
+            }
+        }
+
     }, 1000);
 }
 
